@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    </head>
+    <h1>ejercicio 3</h1>
+
+     
+
+      <p>Introduce los segundos enteros separados por comas</p>
+      <input type="text" id="ejemplo2">
+      <input type="button" value="Ejemplo2" onclick="ejemplo2()">
+
+      <input type="button" value="Reiniciar" onclick="Reiniciar()">
+
+      <p id="resultado"></p>
+     <script>
+
+     var miri=[];
+     var aux=[];
+     function ejemplo2(){
+
+
+    for(i=0;i<4;i++)
+    {
+    miri.push(parseInt(Math.random()*100));
+
+    }
+    document.getElementById("ejemplo2").value= miri;
+
+    var array2=document.getElementById("ejemplo2").value.split(/,/);
+    for(i=0;i<array2.length;i++)
+    {
+
+    aux.push(array2[i]);
+    }	
+
+    document.getElementById("resultado").innerHTML=aux;
+
+}
+    function Reiniciar(){
+    location.reload();
+    }
+
+    </script>
+<body>
+    
+</body>
+</html>

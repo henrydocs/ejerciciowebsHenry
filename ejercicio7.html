@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio7</title>
+    <p id="parrafo">Introduce las marcas de auto</p>
+ 
+</head>
+<body>
+    <body>
+        <form>
+          <p> Autos disponibles: </p>
+          <p><select id="Autos">
+                  <option>Ford</option>
+                  <option>Mitsubishi</option>
+                  <option>Chevrolet</option>
+                  <option>Jeep</option>
+                  <option>Lamborghini</option>
+           </select></p>
+        <p id="parrafo">Introduce las marcas de auto</p>
+    
+    <input type="text" id="text"></input>
+    <input type="button" value="Cargar Ejemplo" onclick="cargarejemplo()"></input>
+    <br><br>
+    <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    <p id="array"></p>
+    
+    <p id="resultado"></p>
+    <script>
+        function cargarejemplo(){
+        
+        document.getElementById("text").value="Ford,Mitsubishi,Chevrolet,Jeep,Lamborgini";
+        
+        }
+        function Reiniciar(){
+        location.reload();
+        }
+        
+    </script>
+    
+      
+      </body>
+</body>
+</html>
